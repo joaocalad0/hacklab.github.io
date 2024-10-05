@@ -187,9 +187,9 @@ body {
 }
 
 .ascii-art {
-    font-size: 14px; 
+    font-size: 13px; 
     color: #00ff00; /* Cor do texto ASCII */
-    margin-top: 40px;
+    margin-top: 80px;
     margin-right: auto;
     margin-left: auto;
     white-space: pre-wrap;
