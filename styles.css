@@ -37,17 +37,14 @@ body {
     left: 0; 
     width: 100%; 
     z-index: 1000; 
-    
-    
 }
 
 .site-header h1 {
     color: #00ff00;
     font-size: 30px; 
-    margin-top: 10px;;
+    margin-top: 10px;
     letter-spacing: 2px; 
 }
-
 
 .site-header nav ul {
     list-style: none;
@@ -210,7 +207,6 @@ body {
     animation: glitch 1s ease-in-out infinite alternate;
 }
 
-
 .ctf-topic {
     background-color: rgba(0, 255, 0, 0.1);
     color: #00ff00;
@@ -224,7 +220,6 @@ body {
     cursor: pointer;
     position: relative;
 }
-
 
 .ctf-topic:hover {
     transform: scale(1.05);
@@ -244,10 +239,6 @@ body {
     }
 }
 
-
-
-
-
 .team-card {
     background: rgba(0, 0, 0, 0.8); 
     border: 2px solid rgba(0, 255, 0, 0.7); 
@@ -264,8 +255,6 @@ body {
     margin-top: 20px;
     transition: transform 0.3s ease; 
 }
-
-
 
 .team-card:hover {
     transform: scale(1.05); 
@@ -292,8 +281,6 @@ body {
     }
 }
 
-
-
 .footer {
     color: #00ff00; 
     font-weight: bold;
@@ -318,4 +305,56 @@ body {
 
 .footer a:hover {
     text-decoration: underline; 
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .terminal {
+        width: 90%; 
+        height: auto; 
+        margin: 20px 0; 
+    }
+
+    .site-header h1 {
+        font-size: 24px; 
+    }
+
+    .site-header nav ul {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .command-line {
+        font-size: 16px; 
+    }
+
+    .team-card {
+        width: 95%; 
+    }
+
+    .footer {
+        font-size: 12px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .site-header h1 {
+        font-size: 20px; 
+    }
+
+    .site-header nav ul {
+        gap: 5px; 
+    }
+
+    .command-line {
+        font-size: 14px; 
+    }
+
+    .terminal {
+        height: 300px; 
+    }
+
+    .footer {
+        font-size: 10px;
+    }
 }
