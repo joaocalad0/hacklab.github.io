@@ -16,18 +16,18 @@ body {
 }
 
 .background-video {
-    position: fixed; /* Fixa o vídeo na tela */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Faz o vídeo cobrir toda a tela */
+    object-fit: cover; 
     z-index: -1;
 }
 
 .site-header {
-    background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro e semi-transparente */
-    color: #00ff00; /* Cor do texto verde */
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: #00ff00; 
     padding: 20px; /* Espaçamento interno */
     display: flex; /* Usa flexbox para o layout */
     justify-content: space-between;
