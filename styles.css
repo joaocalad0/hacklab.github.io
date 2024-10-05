@@ -28,14 +28,14 @@ body {
 .site-header {
     background-color: rgba(0, 0, 0, 0.6); 
     color: #00ff00; 
-    padding: 20px; /* Espaçamento interno */
-    display: flex; /* Usa flexbox para o layout */
+    padding: 20px; 
+    display: flex; 
     justify-content: space-between;
-    text-align: center; /* Centraliza o texto */
-    position: fixed; /* Fixa o cabeçalho no topo */
-    top: 0; /* Alinha ao topo da página */
-    left: 0; /* Alinha ao lado esquerdo */
-    width: 100%; /* Ocupa toda a largura da página */
+    text-align: center; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
     z-index: 1000; 
     
     
@@ -61,29 +61,29 @@ body {
 }
 
 .site-header nav ul li a {
-    color: #00ff00; /* Cor dos links */
-    text-decoration: none; /* Remove sublinhado padrão */
-    font-weight: bold; /* Negrito */
-    letter-spacing: 1px; /* Espaçamento entre letras */
+    color: #00ff00; 
+    text-decoration: none; 
+    font-weight: bold; 
+    letter-spacing: 1px; 
     position: relative;
-    transition: color 0.3s ease;/* Transição da cor e do texto */
+    transition: color 0.3s ease;
 }
 
 .site-header nav ul li a::after {
     content: ""; /* Cria o sublinhado */
     position: absolute;
     left: 0;
-    bottom: -3px; /* Abaixo do texto */
-    width: 100%; /* Largura do link */
-    height: 2px; /* Espessura do sublinhado */
-    background-color: #00ff00; /* Cor do sublinhado */
-    transform: scaleX(0); /* Esconde o sublinhado (largura 0%) */
-    transform-origin: left; /* Começa a animação da direita para a esquerda */
-    transition: transform 0.4s ease; /* Transição suave do sublinhado */
+    bottom: -3px; 
+    width: 100%; 
+    height: 2px; 
+    background-color: #00ff00; 
+    transform: scaleX(0); 
+    transform-origin: left; 
+    transition: transform 0.4s ease; 
 }
 
 .site-header nav ul li a:hover::after {
-    transform: scaleX(1); /* Expande o sublinhado ao passar o mouse */
+    transform: scaleX(1); 
 }
 
 .site-header nav ul li a:hover {
@@ -170,6 +170,15 @@ body {
     animation: blink 1s step-end infinite;
 }
 
+.ctf-category {
+    color: #00ff00; 
+    font-size: 14px;  
+    margin-top: 20px; 
+    white-space: pre-wrap; 
+    margin: 20px 0;
+    margin-left: -5px; 
+}
+
 @keyframes blink {
     from, to {
         color: transparent;
@@ -189,5 +198,31 @@ body {
     text-align: center;
     flex-grow: 1; 
     justify-content: center; 
+}
+
+.footer {
+    color: #00ff00; 
+    font-weight: bold;
+    text-align: center; 
+    padding: 20px 0; 
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); 
+}
+
+.footer p {
+    margin: 5px 0; 
+    font-size: 14px; 
+}
+
+/* Estilo para links no footer */
+.footer a {
+    color: #00ff00; 
+    text-decoration: none; 
+}
+
+.footer a:hover {
+    text-decoration: underline; 
 }
 
