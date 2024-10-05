@@ -104,6 +104,7 @@ body {
     box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
     overflow: hidden;
     margin: 80px 0;
+    margin-top: 20px;
     display: block;
 }
 
@@ -200,6 +201,99 @@ body {
     justify-content: center; 
 }
 
+.ctf-category {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    padding: 10px;
+    animation: glitch 1s ease-in-out infinite alternate;
+}
+
+
+.ctf-topic {
+    background-color: rgba(0, 255, 0, 0.1);
+    color: #00ff00;
+    border: 1px solid rgba(0, 255, 0, 0.5);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: 18px;
+    text-shadow: 0 0 8px rgba(0, 255, 0, 0.8);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.ctf-topic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+}
+
+/* Animação "glitch" para efeito futurista */
+@keyframes glitch {
+    0% {
+        text-shadow: 2px 2px 5px rgba(0, 255, 0, 0.3), -2px -2px 5px rgba(0, 255, 0, 0.3);
+    }
+    50% {
+        text-shadow: -2px -2px 5px rgba(0, 255, 0, 0.7), 2px 2px 5px rgba(0, 255, 0, 0.7);
+    }
+    100% {
+        text-shadow: 1px 1px 3px rgba(0, 255, 0, 0.9), -1px -1px 3px rgba(0, 255, 0, 0.9);
+    }
+}
+
+
+
+
+
+.team-card {
+    background: rgba(0, 0, 0, 0.8); 
+    border: 2px solid rgba(0, 255, 0, 0.7); 
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.7); 
+    border-radius: 10px; 
+    padding: 20px;
+    margin: 10px 0; 
+    justify-content: flex-start;
+    width: 80%; 
+    color: #00ff00; 
+    font-family: 'Courier New', Courier, monospace; 
+    text-align: left; 
+    position: relative;
+    margin-top: 20px;
+    transition: transform 0.3s ease; 
+}
+
+
+
+.team-card:hover {
+    transform: scale(1.05); 
+}
+
+.team-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    background: linear-gradient(45deg, transparent, rgba(0, 255, 0, 0.2), transparent);
+    animation: scan 3s linear infinite; 
+}
+
+@keyframes scan {
+    0% {
+        background-position: -200px 0;
+    }
+    100% {
+        background-position: 200px 0;
+    }
+}
+
+
+
 .footer {
     color: #00ff00; 
     font-weight: bold;
@@ -225,4 +319,3 @@ body {
 .footer a:hover {
     text-decoration: underline; 
 }
-
