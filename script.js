@@ -12,7 +12,7 @@ let currentCommand = '';
 let typingSpeed = 100; 
 
 
-// ASCII Art do sorriso
+// ASCII Art BejaHacklab
 const asciiArt = `
 ██████╗ ███████╗     ██╗ █████╗     ██╗  ██╗ █████╗  ██████╗██╗  ██╗██╗      █████╗ ██████╗ 
 ██╔══██╗██╔════╝     ██║██╔══██╗    ██║  ██║██╔══██╗██╔════╝██║ ██╔╝██║     ██╔══██╗██╔══██╗
